@@ -32,6 +32,10 @@
 		560D67872971D17000874CE1 /* DummyEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67862971D17000874CE1 /* DummyEndpoint.swift */; };
 		560D678E2971D34A00874CE1 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D678D2971D34A00874CE1 /* AppConfiguration.swift */; };
 		560D67912971D36E00874CE1 /* AppConfigurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67902971D36E00874CE1 /* AppConfigurationTest.swift */; };
+		560D67A52971D77600874CE1 /* JsonDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67A42971D77600874CE1 /* JsonDataParser.swift */; };
+		560D67A72971D78400874CE1 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67A62971D78400874CE1 /* DataParser.swift */; };
+		560D67AB2971D7D200874CE1 /* JsonDataParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67AA2971D7D200874CE1 /* JsonDataParserTest.swift */; };
+		560D67AE2971D7EE00874CE1 /* JsonDataParserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67AD2971D7EE00874CE1 /* JsonDataParserMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		560D678A2971D31600874CE1 /* Local.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Local.plist; sourceTree = "<group>"; };
 		560D678D2971D34A00874CE1 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		560D67902971D36E00874CE1 /* AppConfigurationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationTest.swift; sourceTree = "<group>"; };
+		560D67A42971D77600874CE1 /* JsonDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataParser.swift; sourceTree = "<group>"; };
+		560D67A62971D78400874CE1 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		560D67AA2971D7D200874CE1 /* JsonDataParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataParserTest.swift; sourceTree = "<group>"; };
+		560D67AD2971D7EE00874CE1 /* JsonDataParserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataParserMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,7 @@
 				560D673B2971C6B200874CE1 /* Configurations */,
 				560D67392971C69F00874CE1 /* Core */,
 				560D67482971CB1C00874CE1 /* Network */,
+				560D67A22971D75F00874CE1 /* Service */,
 				560D673A2971C6A800874CE1 /* Views */,
 			);
 			path = Pulse;
@@ -128,6 +137,7 @@
 		560D671F2971C10500874CE1 /* PulseTests */ = {
 			isa = PBXGroup;
 			children = (
+				560D67A82971D7C100874CE1 /* Service */,
 				560D678F2971D36600874CE1 /* Configurations */,
 				560D677E2971D0C000874CE1 /* Helpers */,
 				560D67882971D1E300874CE1 /* JSONMocks */,
@@ -217,7 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				560D67572971CB1C00874CE1 /* ApiError.swift */,
-				560D67582971CB1C00874CE1 /* ParserError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -314,6 +323,49 @@
 				560D67902971D36E00874CE1 /* AppConfigurationTest.swift */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		560D67A22971D75F00874CE1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				560D67A32971D76200874CE1 /* Parser */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		560D67A32971D76200874CE1 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				560D67A62971D78400874CE1 /* DataParser.swift */,
+				560D67A42971D77600874CE1 /* JsonDataParser.swift */,
+				560D67582971CB1C00874CE1 /* ParserError.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		560D67A82971D7C100874CE1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				560D67A92971D7C500874CE1 /* Parser */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		560D67A92971D7C500874CE1 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				560D67AC2971D7EA00874CE1 /* Mock */,
+				560D67AA2971D7D200874CE1 /* JsonDataParserTest.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		560D67AC2971D7EA00874CE1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				560D67AD2971D7EE00874CE1 /* JsonDataParserMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,8 +471,10 @@
 			files = (
 				560D670E2971C10300874CE1 /* ViewController.swift in Sources */,
 				560D670A2971C10300874CE1 /* AppDelegate.swift in Sources */,
+				560D67A72971D78400874CE1 /* DataParser.swift in Sources */,
 				560D67632971CB1C00874CE1 /* ParserError.swift in Sources */,
 				560D675A2971CB1C00874CE1 /* URLSessionNetworkProvider.swift in Sources */,
+				560D67A52971D77600874CE1 /* JsonDataParser.swift in Sources */,
 				560D67602971CB1C00874CE1 /* Endpoint.swift in Sources */,
 				560D67622971CB1C00874CE1 /* ApiError.swift in Sources */,
 				560D675E2971CB1C00874CE1 /* EndpointPath.swift in Sources */,
@@ -438,6 +492,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560D67AE2971D7EE00874CE1 /* JsonDataParserMock.swift in Sources */,
+				560D67AB2971D7D200874CE1 /* JsonDataParserTest.swift in Sources */,
 				560D67872971D17000874CE1 /* DummyEndpoint.swift in Sources */,
 				560D677A2971CFA300874CE1 /* URLSessionNetworkProviderTest.swift in Sources */,
 				560D67832971D12200874CE1 /* URLProtocolMock.swift in Sources */,
