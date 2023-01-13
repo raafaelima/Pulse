@@ -23,30 +23,18 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Local"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "560D671B2971C10500874CE1"
                BuildableName = "PulseTests.xctest"
                BlueprintName = "PulseTests"
-               ReferencedContainer = "container:Pulse.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "560D67252971C10500874CE1"
-               BuildableName = "PulseUITests.xctest"
-               BlueprintName = "PulseUITests"
                ReferencedContainer = "container:Pulse.xcodeproj">
             </BuildableReference>
          </TestableReference>

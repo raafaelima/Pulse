@@ -12,6 +12,6 @@
 	<key>ContentType</key>
 	<string>application/json</string>
 	<key>Host</key>
-	<string>http://testhost.com</string>
+	<string>https://618d3aa7fe09aa001744060a.mockapi.io</string>
 </dict>
 </plist>

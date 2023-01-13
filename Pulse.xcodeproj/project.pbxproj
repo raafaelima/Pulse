@@ -45,6 +45,13 @@
 		560D67C62971DBE000874CE1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67C52971DBE000874CE1 /* MainCoordinator.swift */; };
 		560D67C92971DC1200874CE1 /* Storyboarded+Instanciate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67C82971DC1200874CE1 /* Storyboarded+Instanciate.swift */; };
 		560D67CD2971DC6600874CE1 /* UpcomingSportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67CC2971DC6600874CE1 /* UpcomingSportsViewController.swift */; };
+		560D67D02971DF5B00874CE1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67CF2971DF5B00874CE1 /* Service.swift */; };
+		560D67D22971DF8B00874CE1 /* SportsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67D12971DF8B00874CE1 /* SportsService.swift */; };
+		560D67D52971E02200874CE1 /* UpcomingEventsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67D42971E02200874CE1 /* UpcomingEventsEndpoint.swift */; };
+		560D67D72971E19B00874CE1 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67D62971E19B00874CE1 /* Sport.swift */; };
+		560D67D92971E28900874CE1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67D82971E28900874CE1 /* Event.swift */; };
+		560D67DB2971E41900874CE1 /* SportServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67DA2971E41900874CE1 /* SportServiceTest.swift */; };
+		560D67DC2971E68600874CE1 /* upcoming-sports.json in Resources */ = {isa = PBXBuildFile; fileRef = 560D67892971D1F600874CE1 /* upcoming-sports.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +108,12 @@
 		560D67C52971DBE000874CE1 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		560D67C82971DC1200874CE1 /* Storyboarded+Instanciate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboarded+Instanciate.swift"; sourceTree = "<group>"; };
 		560D67CC2971DC6600874CE1 /* UpcomingSportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSportsViewController.swift; sourceTree = "<group>"; };
+		560D67CF2971DF5B00874CE1 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		560D67D12971DF8B00874CE1 /* SportsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsService.swift; sourceTree = "<group>"; };
+		560D67D42971E02200874CE1 /* UpcomingEventsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsEndpoint.swift; sourceTree = "<group>"; };
+		560D67D62971E19B00874CE1 /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
+		560D67D82971E28900874CE1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		560D67DA2971E41900874CE1 /* SportServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportServiceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +160,7 @@
 				560D67C02971DB7900874CE1 /* Coordinator */,
 				560D67392971C69F00874CE1 /* Core */,
 				560D67C72971DC0900874CE1 /* Extensions */,
+				560D67CE2971DF5600874CE1 /* Model */,
 				560D67482971CB1C00874CE1 /* Network */,
 				560D67A22971D75F00874CE1 /* Service */,
 				560D673A2971C6A800874CE1 /* Views */,
@@ -157,12 +171,12 @@
 		560D671F2971C10500874CE1 /* PulseTests */ = {
 			isa = PBXGroup;
 			children = (
-				560D67AF2971D89400874CE1 /* Core */,
-				560D67A82971D7C100874CE1 /* Service */,
 				560D678F2971D36600874CE1 /* Configurations */,
+				560D67AF2971D89400874CE1 /* Core */,
 				560D677E2971D0C000874CE1 /* Helpers */,
 				560D67882971D1E300874CE1 /* JSONMocks */,
 				560D67672971CFA300874CE1 /* Network */,
+				560D67A82971D7C100874CE1 /* Service */,
 			);
 			path = PulseTests;
 			sourceTree = "<group>";
@@ -199,12 +213,11 @@
 		560D67482971CB1C00874CE1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				560D67642971CB7C00874CE1 /* Endpoint */,
-				560D67492971CB1C00874CE1 /* Provider */,
-				560D674C2971CB1C00874CE1 /* Support */,
 				560D67502971CB1C00874CE1 /* Endpoint */,
-				560D67542971CB1C00874CE1 /* Reachability */,
 				560D67562971CB1C00874CE1 /* Error */,
+				560D67492971CB1C00874CE1 /* Provider */,
+				560D67542971CB1C00874CE1 /* Reachability */,
+				560D674C2971CB1C00874CE1 /* Support */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -231,8 +244,8 @@
 		560D67502971CB1C00874CE1 /* Endpoint */ = {
 			isa = PBXGroup;
 			children = (
-				560D67512971CB1C00874CE1 /* EndpointPath.swift */,
-				560D67532971CB1C00874CE1 /* Endpoint.swift */,
+				560D67D32971E00600874CE1 /* Base */,
+				560D67D42971E02200874CE1 /* UpcomingEventsEndpoint.swift */,
 			);
 			path = Endpoint;
 			sourceTree = "<group>";
@@ -251,15 +264,6 @@
 				560D67572971CB1C00874CE1 /* ApiError.swift */,
 			);
 			path = Error;
-			sourceTree = "<group>";
-		};
-		560D67642971CB7C00874CE1 /* Endpoint */ = {
-			isa = PBXGroup;
-			children = (
-				560D67652971CB8100874CE1 /* Endpoint+UrlRequest.swift */,
-			);
-			name = Endpoint;
-			path = ../Endpoint;
 			sourceTree = "<group>";
 		};
 		560D67672971CFA300874CE1 /* Network */ = {
@@ -351,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				560D67A32971D76200874CE1 /* Parser */,
+				560D67D12971DF8B00874CE1 /* SportsService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -369,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				560D67A92971D7C500874CE1 /* Parser */,
+				560D67DA2971E41900874CE1 /* SportServiceTest.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -413,6 +419,7 @@
 		560D67C72971DC0900874CE1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				560D67652971CB8100874CE1 /* Endpoint+UrlRequest.swift */,
 				560D67C82971DC1200874CE1 /* Storyboarded+Instanciate.swift */,
 			);
 			path = Extensions;
@@ -433,6 +440,25 @@
 				560D67CC2971DC6600874CE1 /* UpcomingSportsViewController.swift */,
 			);
 			path = UpcomingSports;
+			sourceTree = "<group>";
+		};
+		560D67CE2971DF5600874CE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				560D67D82971E28900874CE1 /* Event.swift */,
+				560D67CF2971DF5B00874CE1 /* Service.swift */,
+				560D67D62971E19B00874CE1 /* Sport.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		560D67D32971E00600874CE1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				560D67512971CB1C00874CE1 /* EndpointPath.swift */,
+				560D67532971CB1C00874CE1 /* Endpoint.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,6 +552,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560D67DC2971E68600874CE1 /* upcoming-sports.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,14 +564,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				560D67C62971DBE000874CE1 /* MainCoordinator.swift in Sources */,
+				560D67D02971DF5B00874CE1 /* Service.swift in Sources */,
 				560D670A2971C10300874CE1 /* AppDelegate.swift in Sources */,
 				560D67C92971DC1200874CE1 /* Storyboarded+Instanciate.swift in Sources */,
 				560D67BA2971D95500874CE1 /* main.swift in Sources */,
+				560D67D52971E02200874CE1 /* UpcomingEventsEndpoint.swift in Sources */,
+				560D67D72971E19B00874CE1 /* Sport.swift in Sources */,
 				560D67A72971D78400874CE1 /* DataParser.swift in Sources */,
 				560D67CD2971DC6600874CE1 /* UpcomingSportsViewController.swift in Sources */,
 				560D67632971CB1C00874CE1 /* ParserError.swift in Sources */,
+				560D67D92971E28900874CE1 /* Event.swift in Sources */,
 				560D675A2971CB1C00874CE1 /* URLSessionNetworkProvider.swift in Sources */,
 				560D67A52971D77600874CE1 /* JsonDataParser.swift in Sources */,
+				560D67D22971DF8B00874CE1 /* SportsService.swift in Sources */,
 				560D67602971CB1C00874CE1 /* Endpoint.swift in Sources */,
 				560D67622971CB1C00874CE1 /* ApiError.swift in Sources */,
 				560D675E2971CB1C00874CE1 /* EndpointPath.swift in Sources */,
@@ -571,6 +603,7 @@
 				560D677A2971CFA300874CE1 /* URLSessionNetworkProviderTest.swift in Sources */,
 				560D67832971D12200874CE1 /* URLProtocolMock.swift in Sources */,
 				560D677C2971CFA300874CE1 /* UrlBuilderTest.swift in Sources */,
+				560D67DB2971E41900874CE1 /* SportServiceTest.swift in Sources */,
 				560D67792971CFA300874CE1 /* URLSessionNetworkProviderMock.swift in Sources */,
 				560D67B72971D92B00874CE1 /* TestingSceneDelegate.swift in Sources */,
 				560D677B2971CFA300874CE1 /* ReachabilityMock.swift in Sources */,

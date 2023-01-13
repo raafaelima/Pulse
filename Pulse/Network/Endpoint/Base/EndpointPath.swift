@@ -8,5 +8,5 @@
 import Foundation
 
 enum EndpointPath: String {
-    case currentWeather = "/current"
+    case upcomingEvents = "/api/sports"
 }
