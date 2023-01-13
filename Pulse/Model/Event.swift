@@ -13,7 +13,7 @@ struct Event: Codable {
     let name: String
     let description: String
     private let timestamp: Double
-    
+
     var date: Date {
         return Date(timeIntervalSince1970: timestamp)
     }
