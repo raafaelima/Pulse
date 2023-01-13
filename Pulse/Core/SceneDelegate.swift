@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  SceneDelegate.swift
 //  Pulse
 //
 //  Created by Rafael Lima on 13/01/2023.
@@ -7,20 +7,21 @@
 
 import UIKit
 
-class AppDelegate: UIResponder, UIApplicationDelegate {
+@available(iOS 13.0, *)
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     var coordinator: MainCoordinator?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+
         let navController = UINavigationController()
         coordinator = MainCoordinator(navigationController: navController)
         coordinator?.start()
 
-        window = UIWindow(frame: UIScreen.main.bounds)
+        window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
-
-        return true
     }
 }
