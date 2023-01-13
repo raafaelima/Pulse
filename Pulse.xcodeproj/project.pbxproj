@@ -12,7 +12,26 @@
 		560D67112971C10300874CE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560D670F2971C10300874CE1 /* Main.storyboard */; };
 		560D67132971C10500874CE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560D67122971C10500874CE1 /* Assets.xcassets */; };
 		560D67162971C10500874CE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560D67142971C10500874CE1 /* LaunchScreen.storyboard */; };
-		560D67212971C10500874CE1 /* PulseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67202971C10500874CE1 /* PulseTests.swift */; };
+		560D67592971CB1C00874CE1 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D674A2971CB1C00874CE1 /* NetworkProvider.swift */; };
+		560D675A2971CB1C00874CE1 /* URLSessionNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D674B2971CB1C00874CE1 /* URLSessionNetworkProvider.swift */; };
+		560D675B2971CB1C00874CE1 /* HeaderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D674D2971CB1C00874CE1 /* HeaderKey.swift */; };
+		560D675C2971CB1C00874CE1 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D674E2971CB1C00874CE1 /* URLBuilder.swift */; };
+		560D675D2971CB1C00874CE1 /* QueryItemKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D674F2971CB1C00874CE1 /* QueryItemKey.swift */; };
+		560D675E2971CB1C00874CE1 /* EndpointPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67512971CB1C00874CE1 /* EndpointPath.swift */; };
+		560D67602971CB1C00874CE1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67532971CB1C00874CE1 /* Endpoint.swift */; };
+		560D67612971CB1C00874CE1 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67552971CB1C00874CE1 /* Reachability.swift */; };
+		560D67622971CB1C00874CE1 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67572971CB1C00874CE1 /* ApiError.swift */; };
+		560D67632971CB1C00874CE1 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67582971CB1C00874CE1 /* ParserError.swift */; };
+		560D67662971CB8100874CE1 /* Endpoint+UrlRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67652971CB8100874CE1 /* Endpoint+UrlRequest.swift */; };
+		560D67792971CFA300874CE1 /* URLSessionNetworkProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D676E2971CFA300874CE1 /* URLSessionNetworkProviderMock.swift */; };
+		560D677A2971CFA300874CE1 /* URLSessionNetworkProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D676F2971CFA300874CE1 /* URLSessionNetworkProviderTest.swift */; };
+		560D677B2971CFA300874CE1 /* ReachabilityMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67722971CFA300874CE1 /* ReachabilityMock.swift */; };
+		560D677C2971CFA300874CE1 /* UrlBuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67732971CFA300874CE1 /* UrlBuilderTest.swift */; };
+		560D67802971D0C900874CE1 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D677F2971D0C900874CE1 /* JSONHelper.swift */; };
+		560D67832971D12200874CE1 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67822971D12200874CE1 /* URLProtocolMock.swift */; };
+		560D67872971D17000874CE1 /* DummyEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67862971D17000874CE1 /* DummyEndpoint.swift */; };
+		560D678E2971D34A00874CE1 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D678D2971D34A00874CE1 /* AppConfiguration.swift */; };
+		560D67912971D36E00874CE1 /* AppConfigurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67902971D36E00874CE1 /* AppConfigurationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +53,28 @@
 		560D67152971C10500874CE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		560D67172971C10500874CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		560D671C2971C10500874CE1 /* PulseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		560D67202971C10500874CE1 /* PulseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseTests.swift; sourceTree = "<group>"; };
+		560D674A2971CB1C00874CE1 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		560D674B2971CB1C00874CE1 /* URLSessionNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkProvider.swift; sourceTree = "<group>"; };
+		560D674D2971CB1C00874CE1 /* HeaderKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderKey.swift; sourceTree = "<group>"; };
+		560D674E2971CB1C00874CE1 /* URLBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		560D674F2971CB1C00874CE1 /* QueryItemKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryItemKey.swift; sourceTree = "<group>"; };
+		560D67512971CB1C00874CE1 /* EndpointPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointPath.swift; sourceTree = "<group>"; };
+		560D67532971CB1C00874CE1 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		560D67552971CB1C00874CE1 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		560D67572971CB1C00874CE1 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		560D67582971CB1C00874CE1 /* ParserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserError.swift; sourceTree = "<group>"; };
+		560D67652971CB8100874CE1 /* Endpoint+UrlRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+UrlRequest.swift"; sourceTree = "<group>"; };
+		560D676E2971CFA300874CE1 /* URLSessionNetworkProviderMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkProviderMock.swift; sourceTree = "<group>"; };
+		560D676F2971CFA300874CE1 /* URLSessionNetworkProviderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkProviderTest.swift; sourceTree = "<group>"; };
+		560D67722971CFA300874CE1 /* ReachabilityMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityMock.swift; sourceTree = "<group>"; };
+		560D67732971CFA300874CE1 /* UrlBuilderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlBuilderTest.swift; sourceTree = "<group>"; };
+		560D677F2971D0C900874CE1 /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		560D67822971D12200874CE1 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		560D67862971D17000874CE1 /* DummyEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyEndpoint.swift; sourceTree = "<group>"; };
+		560D67892971D1F600874CE1 /* upcoming-sports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "upcoming-sports.json"; sourceTree = "<group>"; };
+		560D678A2971D31600874CE1 /* Local.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Local.plist; sourceTree = "<group>"; };
+		560D678D2971D34A00874CE1 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		560D67902971D36E00874CE1 /* AppConfigurationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +119,7 @@
 				560D67122971C10500874CE1 /* Assets.xcassets */,
 				560D673B2971C6B200874CE1 /* Configurations */,
 				560D67392971C69F00874CE1 /* Core */,
+				560D67482971CB1C00874CE1 /* Network */,
 				560D673A2971C6A800874CE1 /* Views */,
 			);
 			path = Pulse;
@@ -87,7 +128,10 @@
 		560D671F2971C10500874CE1 /* PulseTests */ = {
 			isa = PBXGroup;
 			children = (
-				560D67202971C10500874CE1 /* PulseTests.swift */,
+				560D678F2971D36600874CE1 /* Configurations */,
+				560D677E2971D0C000874CE1 /* Helpers */,
+				560D67882971D1E300874CE1 /* JSONMocks */,
+				560D67672971CFA300874CE1 /* Network */,
 			);
 			path = PulseTests;
 			sourceTree = "<group>";
@@ -114,6 +158,160 @@
 			isa = PBXGroup;
 			children = (
 				560D67172971C10500874CE1 /* Info.plist */,
+				560D678A2971D31600874CE1 /* Local.plist */,
+				560D678D2971D34A00874CE1 /* AppConfiguration.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		560D67482971CB1C00874CE1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				560D67642971CB7C00874CE1 /* Endpoint */,
+				560D67492971CB1C00874CE1 /* Provider */,
+				560D674C2971CB1C00874CE1 /* Support */,
+				560D67502971CB1C00874CE1 /* Endpoint */,
+				560D67542971CB1C00874CE1 /* Reachability */,
+				560D67562971CB1C00874CE1 /* Error */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		560D67492971CB1C00874CE1 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				560D674A2971CB1C00874CE1 /* NetworkProvider.swift */,
+				560D674B2971CB1C00874CE1 /* URLSessionNetworkProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		560D674C2971CB1C00874CE1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				560D674D2971CB1C00874CE1 /* HeaderKey.swift */,
+				560D674E2971CB1C00874CE1 /* URLBuilder.swift */,
+				560D674F2971CB1C00874CE1 /* QueryItemKey.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		560D67502971CB1C00874CE1 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				560D67512971CB1C00874CE1 /* EndpointPath.swift */,
+				560D67532971CB1C00874CE1 /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		560D67542971CB1C00874CE1 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				560D67552971CB1C00874CE1 /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		560D67562971CB1C00874CE1 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				560D67572971CB1C00874CE1 /* ApiError.swift */,
+				560D67582971CB1C00874CE1 /* ParserError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		560D67642971CB7C00874CE1 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				560D67652971CB8100874CE1 /* Endpoint+UrlRequest.swift */,
+			);
+			name = Endpoint;
+			path = ../Endpoint;
+			sourceTree = "<group>";
+		};
+		560D67672971CFA300874CE1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				560D676C2971CFA300874CE1 /* Provider */,
+				560D67702971CFA300874CE1 /* Support */,
+				560D67742971CFA300874CE1 /* Endpoint */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		560D676C2971CFA300874CE1 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				560D676D2971CFA300874CE1 /* Mock */,
+				560D676F2971CFA300874CE1 /* URLSessionNetworkProviderTest.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		560D676D2971CFA300874CE1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				560D676E2971CFA300874CE1 /* URLSessionNetworkProviderMock.swift */,
+				560D67822971D12200874CE1 /* URLProtocolMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		560D67702971CFA300874CE1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				560D67712971CFA300874CE1 /* Mock */,
+				560D67732971CFA300874CE1 /* UrlBuilderTest.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		560D67712971CFA300874CE1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				560D67722971CFA300874CE1 /* ReachabilityMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		560D67742971CFA300874CE1 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				560D67842971D16000874CE1 /* Mock */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		560D677E2971D0C000874CE1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				560D677F2971D0C900874CE1 /* JSONHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		560D67842971D16000874CE1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				560D67862971D17000874CE1 /* DummyEndpoint.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		560D67882971D1E300874CE1 /* JSONMocks */ = {
+			isa = PBXGroup;
+			children = (
+				560D67892971D1F600874CE1 /* upcoming-sports.json */,
+			);
+			path = JSONMocks;
+			sourceTree = "<group>";
+		};
+		560D678F2971D36600874CE1 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				560D67902971D36E00874CE1 /* AppConfigurationTest.swift */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -221,6 +419,18 @@
 			files = (
 				560D670E2971C10300874CE1 /* ViewController.swift in Sources */,
 				560D670A2971C10300874CE1 /* AppDelegate.swift in Sources */,
+				560D67632971CB1C00874CE1 /* ParserError.swift in Sources */,
+				560D675A2971CB1C00874CE1 /* URLSessionNetworkProvider.swift in Sources */,
+				560D67602971CB1C00874CE1 /* Endpoint.swift in Sources */,
+				560D67622971CB1C00874CE1 /* ApiError.swift in Sources */,
+				560D675E2971CB1C00874CE1 /* EndpointPath.swift in Sources */,
+				560D67592971CB1C00874CE1 /* NetworkProvider.swift in Sources */,
+				560D67612971CB1C00874CE1 /* Reachability.swift in Sources */,
+				560D675D2971CB1C00874CE1 /* QueryItemKey.swift in Sources */,
+				560D67662971CB8100874CE1 /* Endpoint+UrlRequest.swift in Sources */,
+				560D675B2971CB1C00874CE1 /* HeaderKey.swift in Sources */,
+				560D678E2971D34A00874CE1 /* AppConfiguration.swift in Sources */,
+				560D675C2971CB1C00874CE1 /* URLBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +438,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				560D67212971C10500874CE1 /* PulseTests.swift in Sources */,
+				560D67872971D17000874CE1 /* DummyEndpoint.swift in Sources */,
+				560D677A2971CFA300874CE1 /* URLSessionNetworkProviderTest.swift in Sources */,
+				560D67832971D12200874CE1 /* URLProtocolMock.swift in Sources */,
+				560D677C2971CFA300874CE1 /* UrlBuilderTest.swift in Sources */,
+				560D67792971CFA300874CE1 /* URLSessionNetworkProviderMock.swift in Sources */,
+				560D677B2971CFA300874CE1 /* ReachabilityMock.swift in Sources */,
+				560D67912971D36E00874CE1 /* AppConfigurationTest.swift in Sources */,
+				560D67802971D0C900874CE1 /* JSONHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +529,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Pulse/Configurations/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -366,6 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Pulse/Configurations/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -453,6 +672,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KU682TTQW4;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pulse/Configurations/Local.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rcl.PulseTests;
@@ -476,6 +696,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KU682TTQW4;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pulse/Configurations/Local.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rcl.PulseTests;
@@ -490,6 +711,125 @@
 			};
 			name = Release;
 		};
+		560D67922971D39B00874CE1 /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Pulse/Configurations/Local.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Local;
+		};
+		560D67932971D39B00874CE1 /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KU682TTQW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pulse/Configurations/Local.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pulse;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rcl.Pulse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Local;
+		};
+		560D67942971D39B00874CE1 /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KU682TTQW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pulse/Configurations/Local.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rcl.PulseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pulse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pulse";
+			};
+			name = Local;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -497,6 +837,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				560D672E2971C10500874CE1 /* Debug */,
+				560D67922971D39B00874CE1 /* Local */,
 				560D672F2971C10500874CE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -506,6 +847,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				560D67312971C10500874CE1 /* Debug */,
+				560D67932971D39B00874CE1 /* Local */,
 				560D67322971C10500874CE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -515,6 +857,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				560D67342971C10500874CE1 /* Debug */,
+				560D67942971D39B00874CE1 /* Local */,
 				560D67352971C10500874CE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

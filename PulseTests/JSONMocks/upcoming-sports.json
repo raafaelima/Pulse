@@ -1,0 +1,28 @@
+[
+    {
+        "i": "SNOO",
+        "d": "SNOOKER",
+        "e": [
+            {
+                "d": "Judd Trump - Mark Allen",
+                "i": "29345346",
+                "si": "SNOO",
+                "sh": "Judd Trump - Mark Allen",
+                "tt": 1677214560
+            }
+        ]
+    },
+    {
+        "i": "BADM",
+        "d": "BADMINTON",
+        "e": [
+            {
+                "d": "Miklos Kis Kasza / Vivien Sandorhazi - Csanad Horvath / Carey Hart",
+                "i": "29341655",
+                "si": "BADM",
+                "sh": "Miklos Kis Kasza / Vivien Sandorhazi - Csanad Horvath / Carey Hart",
+                "tt": 1671741360
+            }
+        ]
+    }
+]
