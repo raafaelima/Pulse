@@ -52,9 +52,8 @@
 		560D67D92971E28900874CE1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67D82971E28900874CE1 /* Event.swift */; };
 		560D67DB2971E41900874CE1 /* SportServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D67DA2971E41900874CE1 /* SportServiceTest.swift */; };
 		560D67DC2971E68600874CE1 /* upcoming-sports.json in Resources */ = {isa = PBXBuildFile; fileRef = 560D67892971D1F600874CE1 /* upcoming-sports.json */; };
-		564E0FF029732447002BF05E /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E0FEF29732447002BF05E /* EventCell.swift */; };
 		564E0FF3297326D5002BF05E /* UpcomingSportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E0FF2297326D5002BF05E /* UpcomingSportsViewModel.swift */; };
-		564E0FF629732710002BF05E /* ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E0FF529732710002BF05E /* ViewDelegate.swift */; };
+		564E0FF629732710002BF05E /* UpcomingSportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E0FF529732710002BF05E /* UpcomingSportsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,9 +116,8 @@
 		560D67D62971E19B00874CE1 /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
 		560D67D82971E28900874CE1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		560D67DA2971E41900874CE1 /* SportServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportServiceTest.swift; sourceTree = "<group>"; };
-		564E0FEF29732447002BF05E /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		564E0FF2297326D5002BF05E /* UpcomingSportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSportsViewModel.swift; sourceTree = "<group>"; };
-		564E0FF529732710002BF05E /* ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDelegate.swift; sourceTree = "<group>"; };
+		564E0FF529732710002BF05E /* UpcomingSportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSportsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -444,7 +442,7 @@
 		560D67CB2971DC4200874CE1 /* UpcomingSports */ = {
 			isa = PBXGroup;
 			children = (
-				564E0FEF29732447002BF05E /* EventCell.swift */,
+				564E0FF529732710002BF05E /* UpcomingSportsView.swift */,
 				560D67CC2971DC6600874CE1 /* UpcomingSportsViewController.swift */,
 				564E0FF2297326D5002BF05E /* UpcomingSportsViewModel.swift */,
 			);
@@ -473,7 +471,6 @@
 		564E0FF429732705002BF05E /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				564E0FF529732710002BF05E /* ViewDelegate.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -597,12 +594,11 @@
 				560D67D22971DF8B00874CE1 /* SportsService.swift in Sources */,
 				560D67602971CB1C00874CE1 /* Endpoint.swift in Sources */,
 				560D67622971CB1C00874CE1 /* ApiError.swift in Sources */,
-				564E0FF629732710002BF05E /* ViewDelegate.swift in Sources */,
+				564E0FF629732710002BF05E /* UpcomingSportsView.swift in Sources */,
 				560D675E2971CB1C00874CE1 /* EndpointPath.swift in Sources */,
 				560D67592971CB1C00874CE1 /* NetworkProvider.swift in Sources */,
 				560D67BC2971D9F000874CE1 /* SceneDelegate.swift in Sources */,
 				560D67C42971DBC600874CE1 /* Coordinator.swift in Sources */,
-				564E0FF029732447002BF05E /* EventCell.swift in Sources */,
 				560D67612971CB1C00874CE1 /* Reachability.swift in Sources */,
 				560D675D2971CB1C00874CE1 /* QueryItemKey.swift in Sources */,
 				560D67662971CB8100874CE1 /* Endpoint+UrlRequest.swift in Sources */,

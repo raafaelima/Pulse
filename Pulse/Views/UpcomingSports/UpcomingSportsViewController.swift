@@ -33,22 +33,31 @@ class UpcomingSportsViewController: UITableViewController, Storyboarded {
 
 // MARK: - Table view data source
 extension UpcomingSportsViewController {
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return viewModel?.upcomingSports[section].name.capitalized ?? ""
-    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return viewModel?.upcomingSports.count ?? 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
 
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Sports"
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel?.upcomingSports.count ?? 0
+    }
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell") as! EventCell
-        cell.events = viewModel?.upcomingSports[indexPath.row].events
+        let sport = viewModel?.upcomingSports[indexPath.row]
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sportCell", for: indexPath)
+        cell.textLabel?.text = sport?.name ?? ""
+        cell.detailTextLabel?.text = sport?.id ?? ""
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sport = viewModel?.upcomingSports[indexPath.row]
+        coordinator?.events(of: sport!)
     }
 }
 

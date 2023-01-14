@@ -1,5 +1,5 @@
 //
-//  ViewDelegate.swift
+//  UpcomingSportsView.swift
 //  Pulse
 //
 //  Created by Rafael Lima on 14/01/2023.

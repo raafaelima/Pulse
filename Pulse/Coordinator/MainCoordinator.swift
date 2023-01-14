@@ -21,4 +21,8 @@ class MainCoordinator: Coordinator {
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }
+
+    func events(of sport: Sport) {
+
+    }
 }
