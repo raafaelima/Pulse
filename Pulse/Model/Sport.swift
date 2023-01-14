@@ -9,12 +9,12 @@ import Foundation
 
 struct Sport: Codable {
     let id: String
-    let description: String
+    let name: String
     let events: [Event]
 
     enum CodingKeys: String, CodingKey {
         case id = "i"
-        case description = "d"
+        case name = "d"
         case events = "e"
     }
 }
