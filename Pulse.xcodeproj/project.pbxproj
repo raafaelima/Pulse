@@ -54,6 +54,7 @@
 		560D67DC2971E68600874CE1 /* upcoming-sports.json in Resources */ = {isa = PBXBuildFile; fileRef = 560D67892971D1F600874CE1 /* upcoming-sports.json */; };
 		564E0FF3297326D5002BF05E /* UpcomingSportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E0FF2297326D5002BF05E /* UpcomingSportsViewModel.swift */; };
 		564E0FF629732710002BF05E /* UpcomingSportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E0FF529732710002BF05E /* UpcomingSportsView.swift */; };
+		564E1002297342BC002BF05E /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E1001297342BC002BF05E /* EventListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		560D67DA2971E41900874CE1 /* SportServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportServiceTest.swift; sourceTree = "<group>"; };
 		564E0FF2297326D5002BF05E /* UpcomingSportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSportsViewModel.swift; sourceTree = "<group>"; };
 		564E0FF529732710002BF05E /* UpcomingSportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSportsView.swift; sourceTree = "<group>"; };
+		564E1001297342BC002BF05E /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 		560D673A2971C6A800874CE1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				564E1000297342B0002BF05E /* EventsList */,
 				560D67CA2971DC3600874CE1 /* Storyboards */,
 				564E0FF429732705002BF05E /* Support */,
 				560D67CB2971DC4200874CE1 /* UpcomingSports */,
@@ -475,6 +478,14 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		564E1000297342B0002BF05E /* EventsList */ = {
+			isa = PBXGroup;
+			children = (
+				564E1001297342BC002BF05E /* EventListViewController.swift */,
+			);
+			path = EventsList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -602,6 +613,7 @@
 				560D67612971CB1C00874CE1 /* Reachability.swift in Sources */,
 				560D675D2971CB1C00874CE1 /* QueryItemKey.swift in Sources */,
 				560D67662971CB8100874CE1 /* Endpoint+UrlRequest.swift in Sources */,
+				564E1002297342BC002BF05E /* EventListViewController.swift in Sources */,
 				560D675B2971CB1C00874CE1 /* HeaderKey.swift in Sources */,
 				560D678E2971D34A00874CE1 /* AppConfiguration.swift in Sources */,
 				560D67C22971DBA500874CE1 /* Storyboarded.swift in Sources */,

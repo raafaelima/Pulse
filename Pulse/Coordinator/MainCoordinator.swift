@@ -17,12 +17,14 @@ class MainCoordinator: Coordinator {
     }
 
     func start() {
-        let vc = UpcomingSportsViewController.instantiate()
-        vc.coordinator = self
-        navigationController.pushViewController(vc, animated: false)
+        let upcomingSports = UpcomingSportsViewController.instantiate()
+        upcomingSports.coordinator = self
+        navigationController.pushViewController(upcomingSports, animated: false)
     }
 
     func events(of sport: Sport) {
-
+        let eventList = EventListViewController.instantiate()
+        eventList.sport = sport
+        navigationController.pushViewController(eventList, animated: true)
     }
 }

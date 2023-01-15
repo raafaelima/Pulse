@@ -11,7 +11,7 @@ import UIKit
 class UpcomingSportsViewController: UITableViewController, Storyboarded {
 
     weak var coordinator: MainCoordinator?
-    private var viewModel: UpcomingSportsViewModel?
+    private var viewModel: UpcomingSportsViewModel!
     private let loadingView = UIActivityIndicatorView(style: .gray)
 
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class UpcomingSportsViewController: UITableViewController, Storyboarded {
     }
 
     private func fetchSports() {
-        viewModel?.fetchSports()
+        viewModel.fetchSports()
         startLoading()
     }
 
@@ -43,21 +43,21 @@ extension UpcomingSportsViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.upcomingSports.count ?? 0
+        return viewModel.upcomingSports.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let sport = viewModel?.upcomingSports[indexPath.row]
+        let sport = viewModel.upcomingSports[indexPath.row]
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "sportCell", for: indexPath)
-        cell.textLabel?.text = sport?.name ?? ""
-        cell.detailTextLabel?.text = sport?.id ?? ""
+        cell.detailTextLabel?.text = sport.id
+        cell.textLabel?.text = sport.name.capitalized
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sport = viewModel?.upcomingSports[indexPath.row]
-        coordinator?.events(of: sport!)
+        let sport = viewModel.upcomingSports[indexPath.row]
+        coordinator?.events(of: sport)
     }
 }
 
