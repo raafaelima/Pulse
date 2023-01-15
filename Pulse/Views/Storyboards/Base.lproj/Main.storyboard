@@ -112,6 +112,7 @@
                                 <connections>
                                     <outlet property="dueDate" destination="bsN-xc-wEe" id="Qs6-Rg-SXQ"/>
                                     <outlet property="eventName" destination="NLQ-ti-aoV" id="hsy-DX-xeJ"/>
+                                    <outlet property="favoriteStar" destination="ZBK-ow-8A5" id="pko-nd-5Pf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

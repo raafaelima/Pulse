@@ -12,6 +12,7 @@ struct Event {
     let name: String
     let sportId: String
     let description: String
+    var isFavorite: Bool = false
     private let timestamp: Double
     var date: Date {
         Date(timeIntervalSince1970: timestamp)
@@ -24,13 +25,7 @@ struct Event {
         let minute = difference.minute ?? 0
         let second = difference.second ?? 0
 
-        return (hour > 0 && minute > 0 && second > 0) ? "Due in: \(hour)h \(minute)m \(second)s" : "Overdue"
-    }
-
-    func formattedDate() -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM/yyyy"
-        return formatter.string(from: self.date)
+        return (hour > 0 && minute > 0 && second > 0) ? "Due in: \(hour)h \(minute)m" : "Overdue"
     }
 }
 

@@ -10,11 +10,14 @@ import UIKit
 
 class EventListViewController: UITableViewController, Storyboarded {
 
-    var sport: Sport?
+    var sport: Sport!
+    var favories: [Event] = []
+    var viewModel: EventListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = sport?.name.capitalized ?? "NoSport"
+        viewModel = EventListViewModel()
+        self.title = sport.name.capitalized
     }
 }
 
@@ -34,15 +37,17 @@ extension EventListViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let event = sport?.events[indexPath.row]
+        var event = sport.events[indexPath.row]
+        event.isFavorite = viewModel.isFavorite(event: event)
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! EventCell
-        cell.eventName.text = event?.name ?? ""
-        cell.dueDate.text = event?.timeIntervalToToday() ?? ""
+        cell.setupWith(event: event)
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Set as Favorite
+        let event = sport.events[indexPath.row]
+        viewModel.favorite(event: event)
+        tableView.reloadData()
     }
 }

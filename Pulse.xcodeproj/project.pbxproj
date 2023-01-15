@@ -56,6 +56,7 @@
 		564E0FF629732710002BF05E /* UpcomingSportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E0FF529732710002BF05E /* UpcomingSportsView.swift */; };
 		564E1002297342BC002BF05E /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E1001297342BC002BF05E /* EventListViewController.swift */; };
 		564E1006297445F9002BF05E /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E1005297445F9002BF05E /* EventCell.swift */; };
+		564E1009297450D0002BF05E /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E1008297450D0002BF05E /* EventListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		564E0FF529732710002BF05E /* UpcomingSportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSportsView.swift; sourceTree = "<group>"; };
 		564E1001297342BC002BF05E /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		564E1005297445F9002BF05E /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		564E1008297450D0002BF05E /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,6 +487,7 @@
 			children = (
 				564E1001297342BC002BF05E /* EventListViewController.swift */,
 				564E1005297445F9002BF05E /* EventCell.swift */,
+				564E1008297450D0002BF05E /* EventListViewModel.swift */,
 			);
 			path = EventsList;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				564E1002297342BC002BF05E /* EventListViewController.swift in Sources */,
 				560D675B2971CB1C00874CE1 /* HeaderKey.swift in Sources */,
 				560D678E2971D34A00874CE1 /* AppConfiguration.swift in Sources */,
+				564E1009297450D0002BF05E /* EventListViewModel.swift in Sources */,
 				560D67C22971DBA500874CE1 /* Storyboarded.swift in Sources */,
 				560D675C2971CB1C00874CE1 /* URLBuilder.swift in Sources */,
 			);
