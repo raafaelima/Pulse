@@ -36,8 +36,9 @@ extension EventListViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let event = sport?.events[indexPath.row]
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath)
-        cell.textLabel?.text = event?.name ?? ""
+        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! EventCell
+        cell.eventName.text = event?.name ?? ""
+        cell.dueDate.text = event?.timeIntervalToToday() ?? ""
         return cell
     }
 

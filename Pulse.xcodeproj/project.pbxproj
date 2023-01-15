@@ -55,6 +55,7 @@
 		564E0FF3297326D5002BF05E /* UpcomingSportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E0FF2297326D5002BF05E /* UpcomingSportsViewModel.swift */; };
 		564E0FF629732710002BF05E /* UpcomingSportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E0FF529732710002BF05E /* UpcomingSportsView.swift */; };
 		564E1002297342BC002BF05E /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E1001297342BC002BF05E /* EventListViewController.swift */; };
+		564E1006297445F9002BF05E /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E1005297445F9002BF05E /* EventCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		564E0FF2297326D5002BF05E /* UpcomingSportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSportsViewModel.swift; sourceTree = "<group>"; };
 		564E0FF529732710002BF05E /* UpcomingSportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingSportsView.swift; sourceTree = "<group>"; };
 		564E1001297342BC002BF05E /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		564E1005297445F9002BF05E /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -482,6 +484,7 @@
 			isa = PBXGroup;
 			children = (
 				564E1001297342BC002BF05E /* EventListViewController.swift */,
+				564E1005297445F9002BF05E /* EventCell.swift */,
 			);
 			path = EventsList;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				560D67CD2971DC6600874CE1 /* UpcomingSportsViewController.swift in Sources */,
 				560D67632971CB1C00874CE1 /* ParserError.swift in Sources */,
 				560D67D92971E28900874CE1 /* Event.swift in Sources */,
+				564E1006297445F9002BF05E /* EventCell.swift in Sources */,
 				560D675A2971CB1C00874CE1 /* URLSessionNetworkProvider.swift in Sources */,
 				560D67A52971D77600874CE1 /* JsonDataParser.swift in Sources */,
 				560D67D22971DF8B00874CE1 /* SportsService.swift in Sources */,

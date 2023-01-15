@@ -7,17 +7,34 @@
 
 import Foundation
 
-struct Event: Codable {
+struct Event {
     let id: String
-    let sportId: String
     let name: String
+    let sportId: String
     let description: String
     private let timestamp: Double
-
     var date: Date {
-        return Date(timeIntervalSince1970: timestamp)
+        Date(timeIntervalSince1970: timestamp)
     }
 
+    func timeIntervalToToday() -> String {
+        let today = Date()
+        let difference = Calendar.current.dateComponents([.hour, .minute, .second], from: today, to: self.date)
+        let hour = difference.hour ?? 0
+        let minute = difference.minute ?? 0
+        let second = difference.second ?? 0
+
+        return (hour > 0 && minute > 0 && second > 0) ? "Due in: \(hour)h \(minute)m \(second)s" : "Overdue"
+    }
+
+    func formattedDate() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        return formatter.string(from: self.date)
+    }
+}
+
+extension Event: Codable {
     enum CodingKeys: String, CodingKey {
         case id = "i"
         case sportId = "si"
