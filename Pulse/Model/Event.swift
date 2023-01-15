@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Event {
-    let id: String
+struct Event: Storable {
+    var id: String
     let name: String
     let sportId: String
     let description: String

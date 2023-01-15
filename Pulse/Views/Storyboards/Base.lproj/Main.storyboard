@@ -47,9 +47,7 @@
                             <outlet property="delegate" destination="wib-vZ-ZCr" id="wBD-JC-iVP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pulse" id="cdq-3X-j1I">
-                        <barButtonItem key="rightBarButtonItem" title="Favorites" id="P51-QL-yja"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Pulse" id="cdq-3X-j1I"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tC3-5B-UF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

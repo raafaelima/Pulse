@@ -17,11 +17,6 @@ class EventCell: UITableViewCell {
     func setupWith(event: Event) {
         eventName.text = event.name
         dueDate.text = event.timeIntervalToToday()
-
-        if #available(iOS 13, *) {
-            favoriteStar.image = event.isFavorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
-        } else {
-            favoriteStar.image = event.isFavorite ? UIImage(named: "favorite.fill") : UIImage(named: "favorite.fill")
-        }
+        favoriteStar.image = event.isFavorite ? UIImage(named: "favorite.fill") : UIImage(named: "favorite")
     }
 }
